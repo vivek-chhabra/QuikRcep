@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/QuikRcep/static/css/main.57cdebf9.css",
-    "main.js": "/QuikRcep/static/js/main.eb4680da.js",
+    "main.js": "/QuikRcep/static/js/main.0de1c99a.js",
     "static/js/787.eefa6fbe.chunk.js": "/QuikRcep/static/js/787.eefa6fbe.chunk.js",
     "index.html": "/QuikRcep/index.html",
     "main.57cdebf9.css.map": "/QuikRcep/static/css/main.57cdebf9.css.map",
-    "main.eb4680da.js.map": "/QuikRcep/static/js/main.eb4680da.js.map",
+    "main.0de1c99a.js.map": "/QuikRcep/static/js/main.0de1c99a.js.map",
     "787.eefa6fbe.chunk.js.map": "/QuikRcep/static/js/787.eefa6fbe.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.57cdebf9.css",
-    "static/js/main.eb4680da.js"
+    "static/js/main.0de1c99a.js"
   ]
 }
