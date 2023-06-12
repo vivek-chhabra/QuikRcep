@@ -1,0 +1,16 @@
+.Home {
+    width: 100%;
+    min-height: 100vh;
+    margin-block: 50px;
+}
+
+.recipes {
+    width: 100%;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 40px;
+    margin-block: 60px;
+    flex-wrap: wrap;
+}
+

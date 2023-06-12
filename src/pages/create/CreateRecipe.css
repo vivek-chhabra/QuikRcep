@@ -1,0 +1,106 @@
+.CreateRecipe {
+    margin-block: 50px;
+}
+
+.CreateRecipe form {
+    display: flex;
+    max-width: 600px;
+    margin-inline: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid #803cd2;
+    padding: 30px 40px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.input-info {
+    display: flex;
+    flex-direction: column;
+    margin-inline: auto;
+    width: 100%;
+}
+
+.input-info label {
+    font-size: 120%;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.input-info input {
+    padding: 8px 10px;
+    width: 100%;
+    background-color: aliceblue;
+    outline: none;
+    border: 2px solid #c1b0d4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.CreateRecipe button {
+    background-color: #803cd2;
+    border: none;
+}
+
+.CreateRecipe button:hover {
+    background-color: #b06fff;
+}
+
+.CreateRecipe h2 span {
+    font-size: 85%;
+}
+
+.CreateRecipe h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.added {
+    scale: 0.8;
+    width: 100%;
+    background-color: #b06fff;
+    text-align: center;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 5px;
+    padding-bottom: 8px;
+    font-weight: 600;
+}
+
+.head {
+    padding: 7px 20px;
+    font-weight: 600;
+}
+
+.input-info input::placeholder {
+    color: #c1b0d4;
+}
+
+/* dark theme */
+.CreateRecipe.dark form {
+    background-color: #3d3148;
+    border: none;
+    box-shadow: 3px 3px 10px rgb(23, 23, 23);
+    color: white;
+}
+
+.CreateRecipe.dark form label {
+    font-weight: 400;
+}
+
+.CreateRecipe.dark form input::placeholder {
+    color: #000000;
+}
+
+.CreateRecipe.dark form input {
+    background-color: #7d6b8e;
+    border: transparent;
+    padding-block: 10px;
+}
+
+.CreateRecipe.dark form .btn {
+    background-color: #1e1824;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

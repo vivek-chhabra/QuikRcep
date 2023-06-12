@@ -1,0 +1,61 @@
+.navbar {
+    background-color: #803cd2 !important;
+    color: white !important;
+}
+
+.navbar-brand {
+    font-weight: 600;
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin-right: 50px;
+}
+
+.nav-link {
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: #ffbdf7 !important;
+}
+
+.btn-outline-success {
+    border: 2px solid #ffffff !important;
+    color: #ffffff !important;
+    font-weight: 600;
+    padding-bottom: 7px;
+}
+
+.btn-outline-success:hover {
+    background-color: #ffffff;
+    color: #803cd2 !important;
+}
+
+.form-control {
+    border: none !important;
+}
+
+.navbar-nav {
+    gap: 20px;
+}
+
+.modes {
+    display: flex;
+    gap: 20px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    margin-left: 50px;
+}
+
+.modes:hover {
+    cursor: pointer;
+}
+
+
+/* dark theme */
+.NavBar.dark .navbar {
+    background-color: #7854a8 !important;
+}

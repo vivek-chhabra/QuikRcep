@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Aoboshi+One&family=Dancing+Script:wght@400;600&family=Diphylleia&family=Inconsolata:wght@200;400;600&family=Lobster&family=Montserrat:wght@100;200;300;400&family=Mukta:wght@200;400&family=Nunito:wght@200;300;400;700;900&family=Oswald:wght@200;400;600&family=Playfair:wght@300&family=Poppins:wght@300;400&family=Roboto+Condensed:wght@300;400&family=Rubik:wght@300;400&family=Tsukimi+Rounded:wght@300;400;500;600&family=Work+Sans:wght@100;200;300&family=Yanone+Kaffeesatz:wght@200;400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.2s ease;
+    box-sizing: border-box;
+    position: relative;
+}
+
+body,
+html,
+#root {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: aliceblue;
+    font-family: "Diphylleia", serif;
+}
+
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.container {
+    max-width: 1350px;
+    margin-inline: auto;
+    padding-inline: 20px;
+}

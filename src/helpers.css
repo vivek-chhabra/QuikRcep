@@ -1,0 +1,31 @@
+* {
+    font-family: "Aoboshi One", serif;
+    font-family: "Dancing Script", cursive;
+    font-family: "Inconsolata", monospace;
+    font-family: "Mukta", sans-serif;
+    font-family: "Nunito", sans-serif;
+    font-family: "Oswald", sans-serif;
+    font-family: "Playfair", serif;
+    font-family: "Poppins", sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-family: "Tsukimi Rounded", sans-serif;
+}
+
+.click {
+    animation: click 0.5s ease 1;
+}
+
+@keyframes click {
+    33% {
+        box-shadow: -1px 1px 10px rgb(31, 126, 146), 1px -1px 10px rgb(31, 126, 146);
+        scale: 1;
+    }
+    66% {
+        box-shadow: -1px 1px 10px rgba(31, 127, 146, 0), 1px -1px 10px rgba(31, 127, 146, 0.043);
+        scale: 0.95;
+    }
+    100% {
+        box-shadow: -1px 1px 10px rgb(31, 126, 146), 1px -1px 10px rgb(31, 126, 146);
+        scale: 1;
+    }
+}

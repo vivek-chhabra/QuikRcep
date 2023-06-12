@@ -1,0 +1,69 @@
+.DetailedRecipe {
+    margin-block: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.DetailedRecipe .container {
+    background-color: aliceblue;
+    padding: 20px 40px;
+    padding-bottom: 40px;
+    box-shadow: -3px -3px 10px rgb(213, 218, 222), 3px 3px 10px rgb(141, 152, 160);
+    border-radius: 10px;
+}
+
+.DetailedRecipe .rec-title {
+    font-size: 250%;
+    font-weight: 600;
+    margin-block: 20px;
+}
+
+.DetailedRecipe .duration {
+    font-size: 120%;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+
+.DetailedRecipe .method {
+    margin-top: 20px;
+    /* width: 1000px; */
+    margin-inline: auto;
+}
+
+.ingredients {
+    width: 500px;
+    margin-top: 10px;
+    margin-inline: auto;
+    background-color: #b0cee3;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #3a4e5c;
+    padding: 10px 20px;
+}
+
+/* dark theme */
+.DetailedRecipe.dark .container {
+    background-color: #3d3148;
+    box-shadow: 3px 3px 10px rgb(23, 23, 23);
+}
+
+.DetailedRecipe.dark .container .rec-title,
+.DetailedRecipe.dark .container .duration,
+.DetailedRecipe.dark .container .ingredients {
+    color: white;
+}
+
+.DetailedRecipe.dark .container .ingredients {
+    background-color: #302839;
+    font-weight: 400;
+}
+
+.DetailedRecipe.dark .container .method {
+    color: #b2b2b2;
+}

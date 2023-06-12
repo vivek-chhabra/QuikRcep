@@ -1,0 +1,81 @@
+.RecipeCard {
+    max-width: 400px;
+    width: 100%;
+    background-color: rgb(242, 249, 255);
+    box-shadow: -3px -3px 10px rgb(213, 218, 222), 3px 3px 10px rgb(141, 152, 160);
+    padding: 15px 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.RecipeCard:hover {
+    rotate: 2deg;
+    cursor: default;
+}
+
+.rec-content {
+    text-align: left;
+}
+
+.rec-content h2 {
+    font-size: 150%;
+    font-weight: 600;
+    color: black;
+}
+
+.time-duration {
+    color: rgb(101, 101, 101);
+}
+
+.method {
+    color: rgb(90, 90, 90);
+    font-weight: 600;
+}
+
+.cook {
+    border-radius: 3px;
+    background-color: rgb(176, 206, 227);
+    color: rgb(54, 54, 54);
+    font-weight: 600;
+    border: none;
+}
+
+.cook:hover {
+    background-color: rgb(145, 170, 189);
+}
+
+.rec-head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-trash-can {
+    color: black;
+    font-size: 120%;
+}
+
+.fa-trash-can:hover {
+    cursor: pointer;
+    color: #82abc9;
+}
+
+/* dark theme */
+.RecipeCard.dark {
+    background-color: #3d3148;
+    box-shadow: 3px 3px 10px rgb(23, 23, 23);
+}
+
+.RecipeCard.dark .rec-head i,
+.RecipeCard.dark .rec-head h2,
+.RecipeCard.dark .time-duration {
+    color: white;
+}
+
+.RecipeCard.dark .method {
+    color: #929292;
+}
+
+.RecipeCard.dark .cook {
+    background-color: #e7ceff;
+}
