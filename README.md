@@ -8,7 +8,7 @@
 
 <br>
    
-## Usage
+## 📚 Usage
 
 1. **Home**: On the home page, all recipes posted by users are displayed in an organized manner. Users can scroll through the recipes.
 
@@ -24,7 +24,7 @@
 
 <br>
 
-## Technologies Used
+## ⚙️ Technologies Used
 
 This project utilizes the following technologies:
 
@@ -37,7 +37,7 @@ This project utilizes the following technologies:
 
 <br>
 
-## Installation
+## 💻 Installation
 
 To install QuikRcep locally, follow these steps:
 
@@ -67,7 +67,7 @@ To install QuikRcep locally, follow these steps:
    
 <br>
 
-## Contribution 👥
+## 👥 Contribution
 
 Contributions to this project are welcome! If you'd like to make any improvements or add new features, please follow these steps:
 
@@ -79,7 +79,7 @@ Contributions to this project are welcome! If you'd like to make any improvement
 
 <br>
 
-## Contact Details
+## 📬 Contact Details
 
 If you have any questions, suggestions, or feedback, feel free to reach out:
 
