@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-inline: 30px;
 }
 
 .DetailedRecipe .container {
@@ -66,4 +67,12 @@
 
 .DetailedRecipe.dark .container .method {
     color: #b2b2b2;
+}
+
+@media (max-width: 800px) {
+    .DetailedRecipe .container {
+        display: flex;
+        flex-direction: column;
+        gap: 200px;
+    }
 }

@@ -1,12 +1,14 @@
+import { NavLink, useNavigate, useParams } from "react-router-dom";
 import { RecipesContext } from "../context/RecipesContext";
-import { NavLink, useParams } from "react-router-dom";
+import { ThemeContext } from "../context/ThemeContext";
 import React, { useContext, useState } from "react";
 import { capitalize } from "../helpers";
 import "./RecipeCard.css";
-import { ThemeContext } from "../context/ThemeContext";
+
 
 export default function RecipeCard(props) {
     const { title, duration, method, id } = props.recipes;
+    const navigate = useNavigate()
 
     // consuming deleteRecipe (context)
     const { deleteRecipe } = useContext(RecipesContext);
@@ -14,9 +16,11 @@ export default function RecipeCard(props) {
     // darkMode
     const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
 
-    const handleDelete = () => {
-        deleteRecipe(id);
-        window.location.reload()
+    // to delete Recipe Card
+    const handleDelete = async () => {
+        await deleteRecipe(id);
+        window.location.reload();
+        navigate('/QuikRcep')
     };
 
     return (
@@ -26,7 +30,9 @@ export default function RecipeCard(props) {
                     <h2>{capitalize(title)}</h2>
                     <i class="fa-solid fa-trash-can" onClick={handleDelete}></i>
                 </div>
-                <p className="time-duration">{duration} minutes to make</p>
+                <p className="time-duration">
+                    {duration} {duration > 1 ? "minutes" : "minute"} to make
+                </p>
                 <p className="method">{method.slice("0", "80")}...</p>
             </div>
             <NavLink to={`/${id}`} className="btn btn-secondary cook">

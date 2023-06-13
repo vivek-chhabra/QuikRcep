@@ -6,6 +6,8 @@ import { ThemeContext } from "../../context/ThemeContext";
 
 export default function DetailedRecipe() {
     const { ide } = useParams();
+
+    // consuming the recipes by using RecipeContext
     const { recipes, getData } = useContext(RecipesContext);
 
     // dark mode
@@ -17,7 +19,7 @@ export default function DetailedRecipe() {
                 recipe.id === ide && (
                     <>
                         <h2 className="rec-title">{recipe.title}</h2>
-                        <div className="duration">Takes {recipe.duration} minutes to cook.</div>
+                        <div className="duration">Takes {recipe.duration} {recipe.duration > 1 ? 'minutes' : 'minute'} to cook.</div>
                         <div className="ingredients">
                             {recipe.ingredients}.
                         </div>

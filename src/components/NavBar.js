@@ -1,10 +1,21 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import "./NavBar.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Navigate, useNavigate } from "react-router-dom";
 import { ThemeContext } from "../context/ThemeContext";
+import { useInput } from "../hooks/useInput";
 
 export default function NavBar() {
     const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
+
+    // search term
+    const [searchTerm, updateSearchTerm] = useInput("");
+    const navigate = useNavigate();
+
+    // handling the submission of the search form
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        navigate(`/search?=${searchTerm}`, { state: searchTerm });
+    };
 
     return (
         <div className={isDarkMode ? "NavBar dark" : "NavBar"}>
@@ -13,8 +24,8 @@ export default function NavBar() {
                     <NavLink to="/" className="navbar-brand pb-2">
                         QuikRecp
                     </NavLink>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon"></span>
+                    <button className="menu" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars-staggered"></i>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
@@ -29,8 +40,8 @@ export default function NavBar() {
                                 </NavLink>
                             </li>
                         </ul>
-                        <form className="d-flex" role="search">
-                            <input className="form-control me-2 shadow-none" type="search" placeholder="Search" aria-label="Search" />
+                        <form className="d-flex" role="search" onSubmit={handleSubmit}>
+                            <input className="form-control me-2 shadow-none" value={searchTerm} onChange={updateSearchTerm} type="search" placeholder="Search" aria-label="Search" />
                             <button className="btn btn-outline-success" type="submit">
                                 Search
                             </button>
