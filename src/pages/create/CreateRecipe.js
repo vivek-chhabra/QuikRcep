@@ -36,7 +36,6 @@ export default function CreateRecipe() {
         resetIng();
         resetMethod();
         resetTitle();
-        getData();
     };
 
     useEffect(() => {});
