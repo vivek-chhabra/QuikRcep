@@ -18,6 +18,7 @@ export default function RecipeCard(props) {
 
     // to delete Recipe Card
     const handleDelete = async () => {
+        alert('vivek)
         await deleteRecipe(id);
         await window.location.reload();
         navigate('/QuikRcep')
