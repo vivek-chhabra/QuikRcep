@@ -30,10 +30,6 @@ export default function DetailedRecipe() {
         });
     }
 
-    useEffect(() => {
-        getData();
-    }, []);
-
     return (
         <div className={isDarkMode ? "DetailedRecipe dark" : "DetailedRecipe"}>
             <div className="container">{detailedRec()}</div>

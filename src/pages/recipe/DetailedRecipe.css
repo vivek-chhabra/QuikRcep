@@ -10,7 +10,7 @@
 }
 
 .DetailedRecipe .container {
-    background-color: aliceblue;
+    background-color: #e6f4ff;
     padding: 20px 40px;
     padding-bottom: 40px;
     box-shadow: -3px -3px 10px rgb(213, 218, 222), 3px 3px 10px rgb(141, 152, 160);
@@ -105,5 +105,15 @@
         max-height: 400px;
         overflow: auto;
         padding-right: 15px;
+    }
+
+    .DetailedRecipe.dark .container .ingredients {
+        background-color: #18141c8f;
+        font-weight: 400;
+    }
+
+    .DetailedRecipe.dark .container {
+        background-color: #3d314800;
+        box-shadow: 3px 3px 10px rgba(23, 23, 23, 0);
     }
 }

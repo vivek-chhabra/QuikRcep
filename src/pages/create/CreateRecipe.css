@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 2px solid #803cd2;
+    border: 2px solid #8fa6bd;
     padding: 30px 40px;
     gap: 20px;
     border-radius: 10px;
@@ -31,20 +31,20 @@
 .input-info input {
     padding: 8px 10px;
     width: 100%;
-    background-color: aliceblue;
+    background-color: #f1f7ff;
     outline: none;
-    border: 2px solid #c1b0d4;
+    border: 2px solid #8aa1b7;
     border-radius: 5px;
     margin-bottom: 10px;
 }
 
 .CreateRecipe button {
-    background-color: #803cd2;
+    background-color: #486686;
     border: none;
 }
 
 .CreateRecipe button:hover {
-    background-color: #b06fff;
+    background-color: #2f4359;
 }
 
 .CreateRecipe h2 span {
@@ -53,13 +53,14 @@
 
 .CreateRecipe h2 {
     width: 100%;
+    height: 50px;
     text-align: center;
 }
 
 .added {
     scale: 0.8;
     width: 100%;
-    background-color: #b06fff;
+    background-color: #486686;
     text-align: center;
     color: white;
     padding: 5px 20px;
@@ -74,7 +75,7 @@
 }
 
 .input-info input::placeholder {
-    color: #c1b0d4;
+    color: #8fa6bd;
 }
 
 /* dark theme */
