@@ -11,7 +11,7 @@ export default function RecipeCard(props) {
     const navigate = useNavigate()
 
     // consuming deleteRecipe (context)
-    const { deleteRecipe } = useContext(RecipesContext);
+    const { deleteRecipe, getData } = useContext(RecipesContext);
 
     // darkMode
     const { isDarkMode, toggleDarkMode } = useContext(ThemeContext);
@@ -19,8 +19,7 @@ export default function RecipeCard(props) {
     // to delete Recipe Card
     const handleDelete = async () => {
         await deleteRecipe(id);
-        // await window.location.reload();
-        navigate('/QuikRcep')
+        getData()
     };
 
     return (

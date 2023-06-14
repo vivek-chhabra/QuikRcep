@@ -90,7 +90,8 @@
 }
 
 .CreateRecipe.dark form input::placeholder {
-    color: #000000;
+    color: #00000065;
+    font-weight: 600;
 }
 
 .CreateRecipe.dark form input {

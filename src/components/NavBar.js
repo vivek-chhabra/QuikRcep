@@ -47,7 +47,7 @@ export default function NavBar() {
                             </button>
                         </form>
                         <div className="modes" onClick={toggleDarkMode}>
-                            {isDarkMode ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
+                            {!isDarkMode ? <i className="fa-solid fa-moon"></i> : <i className="fa-solid fa-sun"></i>}
                         </div>
                     </div>
                 </div>

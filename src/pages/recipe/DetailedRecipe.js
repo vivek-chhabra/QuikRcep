@@ -1,8 +1,8 @@
+import { RecipesContext } from "../../context/RecipesContext";
+import { ThemeContext } from "../../context/ThemeContext";
 import React, { useContext, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { RecipesContext } from "../../context/RecipesContext";
 import "../recipe/DetailedRecipe.css";
-import { ThemeContext } from "../../context/ThemeContext";
 
 export default function DetailedRecipe() {
     const { ide } = useParams();

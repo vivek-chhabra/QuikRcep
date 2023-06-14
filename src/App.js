@@ -3,12 +3,12 @@ import RecipesProvider, { RecipesContext } from "./context/RecipesContext";
 import NewRecipeProvider from "./context/NewRecipeContext";
 import DetailedRecipe from "./pages/recipe/DetailedRecipe";
 import CreateRecipe from "./pages/create/CreateRecipe";
+import SearchRecipe from "./pages/search/SearchRecipe";
 import { ThemeContext } from "./context/ThemeContext";
 import { useState, useContext } from "react";
 import NavBar from "./components/NavBar";
 import Home from "./pages/home/Home";
 import "./App.css";
-import SearchRecipe from "./pages/search/SearchRecipe";
 
 function App() {
     const { recipes } = useContext(RecipesContext);

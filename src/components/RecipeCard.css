@@ -1,7 +1,7 @@
 .RecipeCard {
     max-width: 400px;
     width: 100%;
-    background-color: rgb(242, 249, 255);
+    background-color: rgb(227, 242, 255);
     box-shadow: -3px -3px 10px rgb(213, 218, 222), 3px 3px 10px rgb(141, 152, 160);
     padding: 15px 25px;
     border-radius: 5px;
